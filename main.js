@@ -20,5 +20,9 @@ function Book(title, author, pages, isRead, unId) {
 }
 
 function addBookToLibrary() {
-
+    let newBook = new Book("rich", "nkateko", 233, false, "hashdh999")
+    myLibrary.push(newBook)
 }
+
+addBookToLibrary()
+console.log(myLibrary)
