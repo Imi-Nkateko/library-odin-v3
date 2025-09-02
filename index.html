@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="add-book">
@@ -18,11 +18,12 @@
                 Read Already                                                                                                                                                                                                            
                 <input type="checkbox" name="isRead" id="isRead" placeholder="read">
             </label>
-            <button>Add to Library</button>
+            <button class="addBtn">Add to Library</button>
          </div>
     </div>
     <div class="container">
         <h1>My Library</h1>
+        <div class="cards-container"></div>
     </div>
 </body>
 </html>
