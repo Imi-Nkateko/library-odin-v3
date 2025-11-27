@@ -9,23 +9,24 @@ const addBookBtn = document.querySelector(".addBtn");
 const cardsContainer = document.querySelector(".cards-container");
 
 
-function Book(title, author, pages, isRead, unId,) {
-    if (!new.target) {
-        throw Error("new is missing from the constructor")
-    }
 
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.isRead = isRead;
-    this.unId = unId;
-    this.info = function() {
-        return `
+function Book(title, author, pages, isRead, unId,) {
+  if (!new.target) {
+    throw Error("new is missing from the constructor")
+  }
+
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.isRead = isRead;
+  this.unId = unId;
+  this.info = function () {
+    return `
         ${this.title} by ${this.author}, 
         ${this.pages} pages has 
         ${this.isRead ? "been" : "not been"} read.
         `
-    }
+  }
 }
 
 function addBookToLibrary() {
@@ -62,11 +63,11 @@ function addBookToLibrary() {
 
 
 addBookBtn.addEventListener("click", () => {
-    addBookToLibrary()
-   title.value = "";
-   author.value = "";
-   pages.value ="";
-   isRead.checked = false;
+  addBookToLibrary()
+  title.value = "";
+  author.value = "";
+  pages.value = "";
+  isRead.checked = false;
 })
 
 let deleteBtn = document.querySelector("#delete_btn");
