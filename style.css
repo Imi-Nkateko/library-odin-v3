@@ -4,7 +4,7 @@ body {
   align-items: center; 
   height: 100vh; 
   margin: 5rem; */
-   display: grid;
+  display: grid;
   grid-template-columns: max-content 1fr;
   gap: 1rem;
   height: 100vh;
@@ -16,18 +16,18 @@ body {
 }
 
 .add-book {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .add-book-container {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 /* card */
 
-/* From Uiverse.io by andrew-demchenk0 */ 
+/* From Uiverse.io by andrew-demchenk0 */
 .card {
   --main-color: #000;
   --bg-color: #EBD18D;
@@ -54,7 +54,8 @@ body {
   cursor: pointer;
 }
 
-.card___wrapper-acounts > div:nth-child(2) {
+/*
+.card___wrapper-acounts  > div:nth-child(2) {
   position: absolute;
   left: 25px;
   z-index: -1;
@@ -65,7 +66,7 @@ body {
   left: 50px;
   z-index: -2;
 }
-
+*/
 .card__score {
   display: flex;
   justify-content: center;
@@ -136,4 +137,3 @@ body {
   background-color: var(--main-color);
   border-radius: 100px;
 }
-
